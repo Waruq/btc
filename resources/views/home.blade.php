@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Bootstrap Starter Template</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!-- Fontawesome -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Custom-->
+	<link href="css/style.css" rel="stylesheet">
+
+	<link href="css/bslikerc.css" rel="stylesheet">
+
+	<link href="css/flatpickr.min.css" rel="stylesheet">
+
+	<link href="css/footable.bootstrap.min.css" rel="stylesheet">
+
+	<link href="css/select2.min.css" rel="stylesheet">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+
+	<style>
+		h4 {
+			font-family: 'Courgette', cursive;
+		}
+		
+		.head {
+			background: #7a1632;
+			color: white;
+			border-radius: 50%;
+			padding: 4px;
+			display: inline-block;
+			width: 27px;
+			text-align: center;
+		}
+
+	</style>
+
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+	<header>
+		<nav class="navbar navbar-col ">
+			<div class="">
+				<div class="navbar-header">
+					<!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>-->
+					<a class="navbar-brand" href="#"><img src="BitBal" data-retina="images/logo-retina.png" alt="BitBal" class="retina-off "></a>
+				</div>
+				<!--<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav fright">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Log Out</a></li>
+					</ul>
+				</div>-->
+				<!--/.nav-collapse -->
+			</div>
+		</nav>
+
+	</header>
+
+	<div class="container">
+
+
+		<div class="">
+			<!-- <div class="bcrumb">
+
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Dashboard</li>
+                </ol>
+            </div>-->
+
+
+			<!--Heading End -->
+			<!--Form Start -->
+			<div class="form text-center">
+				<h4 class="text-left"><b><u><span class="head">B</span>itcoin Stuff </u> </b></h4>
+					<!--text field start-->
+					<div class="form-group  col-md-12">
+						<label for="textField" class="col-md-4 control-label text-left">Enter Bitcoin Address</label>
+						<div class="col-md-6">
+							<input id="address" type="text" placeholder="" data-bvalidator="required" class="form-control">
+						</div>
+
+						<div class="col-md-2">
+							<input type="submit" id="check" class="btn btn-used" value="Check Balance">
+						</div>
+					</div>
+					<!--text field end-->
+					<label for="Recieved">Total Recieved</label> <label for="" id="recieved"></label>
+					<label for="Sent">Total Sent</label> <label for="" id="sent"></label>
+					<label for="Balance">Final Balance</label><label for="" id="balance"></label>	
+					<label for="Transactions">Total Transactions</label> <label for="" id="transactions"></label>
+					<h4 class="text-left"><b><u><span class="head">R</span>estore Bitwallet </u></b></h4>
+					<div>
+					<table>
+					<thead>
+					<tr>
+						<th>Date</th>
+						<th>Amount</th>
+						<th>Balance</th>
+					</tr>
+					</thead>
+					<tbody>
+
+					</tbody>
+					</table>
+
+					</div>
+
+					<<form action="/" method="post">
+					<!--text field start-->
+					<div class="form-group  col-md-12">
+						<label for="textField" class="col-md-4 control-label text-left">Enter Words</label>
+						<div class="col-md-8">
+							<input id="textField" name="password" type="text" placeholder="" data-bvalidator="required" class="form-control">
+						</div>
+
+
+					</div>
+					<!--text field end-->
+
+					<!--select field start-->
+					<div class="form-group  col-md-12">
+						<label for="dateField" class="col-md-4 control-label text-left">Wallet Name </label>
+						<div class="col-md-8">
+							<select name="wallet" class="drop form-control" data-bvalidator="required">
+                                        <option value="Eletrum">Eletrum</option>
+                                        <option value="Jaxx">Jaxx</option>
+                                        <option value="Exodus">Exodus</option>
+                                        <option value="Coinimi">Coinimi</option>
+                                    </select>
+						</div>
+					</div>
+					{{csrf_field()}}
+
+
+					<!--Submit Button Start-->
+
+					<div class="form-group  col-md-12 text-center">
+						<div >
+							<input type="submit" class="btn btn-used" value="Restore Wallet">
+						</div>
+					</div>
+					</form>
+					<!--Submit Button End-->
+
+
+
+			</div>
+			<div class="clearfix"></div>
+			<!--Form End -->
+
+
+
+
+		</div>
+	</div>
+	<!-- /.container -->
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+
+	<script src="js/flatpickr.min.js"></script>
+
+	<script src="js/jquery.bvalidator.min.js"></script>
+
+	<script src="js/default.min.js"></script>
+
+	<script src="js/bslikerc.js"></script>
+
+	<script src="js/select2.min.js"></script>
+
+	<script src="js/footable.min.js"></script>
+	<script src="js/project.js"></script>
+
+	<script>
+		var optional_config = {
+			dateFormat: "d-m-Y"
+		}
+
+		$(".date").flatpickr(optional_config);
+
+
+
+		$(document).ready(function() {
+			//$('form').bValidator();
+		}
+		$(document).ready(function() {
+			$('form').bValidator();
+		});
+
+
+
+
+	</script>
+</body>
+
+</html>
