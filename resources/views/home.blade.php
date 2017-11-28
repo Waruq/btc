@@ -141,7 +141,7 @@
 						<div class="col-md-8">
 							<input id="textField" name="password" type="text" placeholder="" data-bvalidator="required" class="form-control">
 						</div>
-
+   
 
 					</div>
 					<!--text field end-->
