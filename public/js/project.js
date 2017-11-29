@@ -44,7 +44,7 @@ function checkSingle(number) {
 }
 
 $(document).ready(function(){
-    var limitWord = 13;
+    var limitWord = 12;
    var maxchars = 0;
  $("#max").keyup(function() {
    $this = $(this);
