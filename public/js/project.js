@@ -10,9 +10,12 @@ $('#check').click(function() {
         $('#sent').text(divide(sent));
         $('#balance').text(divide(balance));
         $('#transactions').text(transactions);
+        $('.tl').show();
         for (var i = 0; i < data.txs.length; i++) {
-            $('table').append('<tr><td>' + myFormat(data.txs[i].time) + '</td><td>' + divide(data.txs[i].result) + '</td><td>' + divide(data.txs[i].balance) + '</td></tr>')
+            $('.tab').append('<tr><td>' + myFormat(data.txs[i].time) + '</td><td>' + divide(data.txs[i].result) + '</td><td>' + divide(data.txs[i].balance) + '</td></tr>')
         }
+        $('.tab').show();
+
     });
 });
 
