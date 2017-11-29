@@ -59,6 +59,14 @@
 }
 .tl{
 	display: none;
+	float: left;
+}
+
+.sb{
+	float:left;
+width: 70%;
+overflow-y: auto;
+height: 190px;
 }
 
 	</style>
@@ -97,7 +105,7 @@
                     <li class="breadcrumb-item active">Dashboard</li>
                 </ol>
             </div>-->
-1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX
+
 
 			<!--Heading End -->
 			<!--Form Start -->
@@ -152,7 +160,7 @@
  
   </tr>
 </table>
-                    <div>
+                    <div class="sb">
 					<table class="table table-striped tab">
 					<thead>
 					<tr>
@@ -167,7 +175,7 @@
 					</table>
 
 					</div>
-
+<br style="clear: both;">
 					<h4 class="text-left"><b><u><span class="head">R</span>estore Wallet </u></b></h4>
 					
 
