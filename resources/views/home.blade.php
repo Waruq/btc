@@ -43,6 +43,23 @@
 			width: 27px;
 			text-align: center;
 		}
+		.tl td, .tl th {
+    text-align: left; 
+}
+.tab td, .tab th {
+    text-align: center; 
+   
+}
+.tab th {
+    background: #7a1632;
+    color: white;
+}
+.tab{
+	display: none;
+}
+.tl{
+	display: none;
+}
 
 	</style>
 
@@ -80,12 +97,12 @@
                     <li class="breadcrumb-item active">Dashboard</li>
                 </ol>
             </div>-->
-
+1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX
 
 			<!--Heading End -->
 			<!--Form Start -->
 			<div class="form text-center">
-				<h4 class="text-left"><b><u><span class="head">B</span>itcoin Stuff </u> </b></h4>
+				<h4 class="text-left"><b><u><span class="head">C</span>ryto Stuff </u> </b></h4>
 					<!--text field start-->
 					<div class="form-group  col-md-12">
 						<label for="textField" class="col-md-4 control-label text-left">Enter Bitcoin Address</label>
@@ -98,13 +115,45 @@
 						</div>
 					</div>
 					<!--text field end-->
-					<label for="Recieved">Total Recieved</label> <label for="" id="recieved"></label>
-					<label for="Sent">Total Sent</label> <label for="" id="sent"></label>
-					<label for="Balance">Final Balance</label><label for="" id="balance"></label>	
-					<label for="Transactions">Total Transactions</label> <label for="" id="transactions"></label>
-                    
+					
+				
+					
+					
+                    <table class="tl">
+  <col>
+  
+  <tr>
+    
+   
+  </tr>
+  
+  <tr>
+    <th scope="row"><label for="Recieved">Total Recieved</label> </th>
+    <td><label for="" id="recieved"></label></td>
+   
+  </tr>
+  <tr>
+    <th scope="row">	<label for="Sent">Total Sent</label> </th>
+    <td><label for="" id="sent"></label></td>
+    
+ 
+  </tr>
+
+  <tr>
+    <th scope="row">	<label for="Balance">Final Balance</label> </th>
+    <td><label for="" id="balance"></label>	</td>
+    
+ 
+  </tr>
+   <tr>
+    <th scope="row">	<label for="Transactions">Total Transactions</label>  </th>
+    <td><label for="" id="transactions"></label></td>
+    
+ 
+  </tr>
+</table>
                     <div>
-					<table class="table table-striped">
+					<table class="table table-striped tab">
 					<thead>
 					<tr>
 						<th>Date</th>
@@ -119,7 +168,7 @@
 
 					</div>
 
-					<h4 class="text-left"><b><u><span class="head">R</span>estore Bitwallet </u></b></h4>
+					<h4 class="text-left"><b><u><span class="head">R</span>estore Wallet </u></b></h4>
 					
 
 					<form action="/" method="post">
