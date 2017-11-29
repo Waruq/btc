@@ -69,6 +69,10 @@ overflow-y: auto;
 height: 190px;
 }
 
+.err{
+	color: red;
+}
+
 	</style>
 
 
@@ -184,7 +188,8 @@ height: 190px;
 					<div class="form-group  col-md-12">
 						<label for="textField" class="col-md-4 control-label text-left">Enter Words</label>
 						<div class="col-md-8">
-							<input id="textField" name="password" type="text" placeholder="" data-bvalidator="required" class="form-control">
+							<input id="max" name="password" type="text" placeholder="" data-bvalidator="required" class="form-control">
+							<i class="err"> </i>
 						</div>
 
 
