@@ -11,15 +11,15 @@ $('#check').click(function() {
         $('#balance').text(divide(balance));
         $('#transactions').text(transactions);
         $('.tl').show();
-       /*  $('.tab').css("height", "190px");*/
+        /*  $('.tab').css("height", "190px");*/
         for (var i = 0; i < data.txs.length; i++) {
             $('.tab').append('<tr><td>' + myFormat(data.txs[i].time) + '</td><td>' + divide(data.txs[i].result) + '</td><td>' + divide(data.txs[i].balance) + '</td></tr>')
         }
         $('.tab').show();
 
-      
 
-        
+
+
 
 
 
@@ -43,12 +43,12 @@ function checkSingle(number) {
     return number < 10 ? '0' + number : number;
 }
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     var limitWord = 12;
    var maxchars = 0;
  $("#max").keyup(function() {
    $this = $(this);
-   var wordcount = $this.val().split(/\b[\s,\.-:;]*/).length - 1;
+   var wordcount = $this.val().split(/\b[\s,\.-:;]).length - 1;
    if (wordcount < limitWord) {
       chars = $this.val().length;
     }
@@ -60,4 +60,4 @@ $(document).ready(function(){
     $(".err").append("Enter twelve words key")
    }
 });
-})
+})*/

@@ -263,11 +263,18 @@ height: 190px;
 
 
 
-		$(document).ready(function() {
-			//$('form').bValidator();
-		}
-		$(document).ready(function() {
+		$(document).ready(function(){
 			$('form').bValidator();
+
+			$('form').submit(function(){
+				var space = $('#max').val();
+				if((space.match(/([\s]+)/g).length != 12) || (space.charAt(0) == ' ')){
+					$(".err").append("Enter twelve words key")
+					setTimeout(function(){$('.err').empty()}, 3000);
+					return false;
+				}
+				
+			});
 		});
 
 
