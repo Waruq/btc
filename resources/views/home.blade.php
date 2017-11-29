@@ -268,7 +268,9 @@ height: 190px;
 
 			$('form').submit(function(){
 				var space = $('#max').val();
-				if((space.match(/([\s]+)/g).length != 12) || (space.charAt(0) == ' ')){
+				var trimmed = space.trim();
+				alert(trimmed.match(/([\s]+)/g).length != 11)
+				if(trimmed.match(/([\s]+)/g).length != 11){
 					$(".err").append("Enter twelve words key")
 					setTimeout(function(){$('.err').empty()}, 3000);
 					return false;
