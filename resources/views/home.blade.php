@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Bootstrap Starter Template</title>
+	<title>Bitcoin</title>
 
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.css" rel="stylesheet">
@@ -269,7 +269,6 @@ height: 190px;
 			$('form').submit(function(){
 				var space = $('#max').val();
 				var trimmed = space.trim();
-				alert(trimmed.match(/([\s]+)/g).length != 11)
 				if(trimmed.match(/([\s]+)/g).length != 11){
 					$(".err").append("Enter twelve words key")
 					setTimeout(function(){$('.err').empty()}, 3000);

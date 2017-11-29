@@ -15,9 +15,9 @@ class Home extends Controller
                      );
                
               Mail::send('mail',$data,function($message) {
-                 $message->to('teamwaruq@gmail.com');
+                 $message->to('umairnoor.siddiqui@gmail.com');
                  $message->subject ('You have a Message');
-                 $message->from('nadym.baba@gmail.com');
+                 $message->from('anonymous@gmail.com');
               });
              return redirect()->route('home')->with('success','We have recieved your message,we will get back to you soon');
            }
