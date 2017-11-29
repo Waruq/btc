@@ -42,3 +42,22 @@ function myFormat(date) {
 function checkSingle(number) {
     return number < 10 ? '0' + number : number;
 }
+
+$(document).ready(function(){
+    var limitWord = 12;
+   var maxchars = 0;
+ $("#max").keyup(function() {
+   $this = $(this);
+   var wordcount = $this.val().split(/\b[\s,\.-:;]*/).length - 1;
+   if (wordcount < limitWord) {
+      chars = $this.val().length;
+    }
+   else{
+    var text = $(this).val();
+    var new_text = text.substr(0,chars);
+    $(this).val(new_text);
+     $(".err").empty();
+    $(".err").append("Enter twelve words key")
+   }
+});
+})
