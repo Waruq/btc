@@ -11,10 +11,19 @@ $('#check').click(function() {
         $('#balance').text(divide(balance));
         $('#transactions').text(transactions);
         $('.tl').show();
+       /*  $('.tab').css("height", "190px");*/
         for (var i = 0; i < data.txs.length; i++) {
             $('.tab').append('<tr><td>' + myFormat(data.txs[i].time) + '</td><td>' + divide(data.txs[i].result) + '</td><td>' + divide(data.txs[i].balance) + '</td></tr>')
         }
         $('.tab').show();
+
+      
+
+        
+
+
+
+
 
     });
 });
