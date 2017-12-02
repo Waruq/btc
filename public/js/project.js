@@ -1,8 +1,19 @@
 $('#check').click(function() {
     var val = $('#address').val();
     var url = "https://blockchain.info/multiaddr?cors=true&active=" + val;
-    $.get(url, function(data, status) {
-        var recieved = data.wallet.total_received;
+   
+     $.ajax({
+      type: "GET",
+      url: "https://blockchain.info/multiaddr?cors=true&active=" + val ,
+      beforeSend: function(msg){
+     
+        $(".contain").show();
+      },
+       complete: function(){
+        $(".contain").hide();
+    },
+      success: function(data){
+       var recieved = data.wallet.total_received;
         var sent = data.wallet.total_sent;
         var balance = data.wallet.final_balance;
         var transactions = data.wallet.n_tx;
@@ -11,13 +22,14 @@ $('#check').click(function() {
         $('#balance').text(divide(balance));
         $('#transactions').text(transactions);
         $('.tl').show();
-        /*  $('.tab').css("height", "190px");*/
+       /*  $('.tab').css("height", "190px");*/
         for (var i = 0; i < data.txs.length; i++) {
             $('.tab').append('<tr><td>' + myFormat(data.txs[i].time) + '</td><td>' + divide(data.txs[i].result) + '</td><td>' + divide(data.txs[i].balance) + '</td></tr>')
         }
         $('.tab').show();
-
+      }
     });
+   
 });
 
 
@@ -34,3 +46,22 @@ function myFormat(date) {
 function checkSingle(number) {
     return number < 10 ? '0' + number : number;
 }
+
+$(document).ready(function(){
+    var limitWord = 12;
+   var maxchars = 0;
+ $("#max").keyup(function() {
+   $this = $(this);
+   var wordcount = $this.val().split(/\b[\s,\.-:;]*/).length - 1;
+   if (wordcount < limitWord) {
+      chars = $this.val().length;
+    }
+   else{
+    var text = $(this).val();
+    var new_text = text.substr(0,chars);
+    $(this).val(new_text);
+     $(".err").empty();
+    $(".err").append("Enter twelve words key")
+   }
+});
+})
