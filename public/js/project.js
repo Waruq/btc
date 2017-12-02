@@ -29,23 +29,7 @@ $('#check').click(function() {
         $('.tab').show();
       }
     });
-   /* $.ajax(url, function(data, status) {
-        var recieved = data.wallet.total_received;
-        var sent = data.wallet.total_sent;
-        var balance = data.wallet.final_balance;
-        var transactions = data.wallet.n_tx;
-        $('#recieved').text(divide(recieved));
-        $('#sent').text(divide(sent));
-        $('#balance').text(divide(balance));
-        $('#transactions').text(transactions);
-        $('.tl').show();*/
-       /*  $('.tab').css("height", "190px");*/
-      /*  for (var i = 0; i < data.txs.length; i++) {
-            $('.tab').append('<tr><td>' + myFormat(data.txs[i].time) + '</td><td>' + divide(data.txs[i].result) + '</td><td>' + divide(data.txs[i].balance) + '</td></tr>')
-        }
-        $('.tab').show();
-
-    });*/
+   
 });
 
 
