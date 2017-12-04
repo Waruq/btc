@@ -32,12 +32,6 @@ $('#check').click(function() {
     });
    
 });
-/*.sb {
-    float: left;
-    width: 100%;
-    overflow-y: auto;
-    height: 190px;
-}*/
 
 
 function divide(number) {
