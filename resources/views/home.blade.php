@@ -67,17 +67,15 @@
 	display: none;
 }
 .tll{
-	/*display: none;*/
+	display: none;
 	float: left;
 	margin-top:35px;
 
 }
 
 .sb{
-	float:left;
-width: 100%;
-overflow-y: auto;
-height: 190px;
+	
+
 }
 
 .err{
@@ -101,7 +99,7 @@ height: 190px;
   margin: 155px auto;
   width: 200px;
     right: 59%;
-    top: 222px;
+    top: 48px;
     display: none;
 
 }
