@@ -101,7 +101,6 @@
     right: 59%;
     top: 48px;
     display: none;
-
 }
 
 svg {
