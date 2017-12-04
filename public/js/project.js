@@ -11,6 +11,7 @@ $('#check').click(function() {
       },
        complete: function(){
         $(".contain").hide();
+           $('.sb').css({"float":"left", "width":"100%", "overflow-y": "auto","height": "190px"});
     },
       success: function(data){
        var recieved = data.wallet.total_received;
@@ -21,8 +22,8 @@ $('#check').click(function() {
         $('#sent').text(divide(sent));
         $('#balance').text(divide(balance));
         $('#transactions').text(transactions);
-        $('.tl').show();
-       /*  $('.tab').css("height", "190px");*/
+        $('.tll').show();
+      
         for (var i = 0; i < data.txs.length; i++) {
             $('.tab').append('<tr><td>' + myFormat(data.txs[i].time) + '</td><td>' + divide(data.txs[i].result) + '</td><td>' + divide(data.txs[i].balance) + '</td></tr>')
         }
@@ -31,7 +32,12 @@ $('#check').click(function() {
     });
    
 });
-
+/*.sb {
+    float: left;
+    width: 100%;
+    overflow-y: auto;
+    height: 190px;
+}*/
 
 
 function divide(number) {
