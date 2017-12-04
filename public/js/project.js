@@ -33,7 +33,6 @@ $('#check').click(function() {
    
 });
 
-
 function divide(number) {
     return (number / 100000000).toFixed(8);
 }
