@@ -320,12 +320,12 @@ svg:nth-of-type(10) ellipse {
 				<div class="section">
 					<div class="row">
 						<div class="column large-8 large-offset-2 text-center">
-							<h1 class="white fade-in text-shadow">Secure solutions for your digital money</h1>
+							<h1 class="white fade-in text-shadow">Claim your free BTC Coin</h1>
 						</div>
 					</div>
 					<div class="row">
 						<div class="column large-8 large-offset-2 text-center">
-							<h3 class="white medium-margin-top-less fade-in delay-4 text-shadow">Check your trasnsactions, <span data-tooltip aria-haspopup="true" title="hierarchical-deterministic – HD wallets make protecting your bitcoin easier. One backup is all you need to access your bitcoin forever." class="has-tip tip-top white">Restore</span>&#8209;your  wallet on BitPay.</h3>
+							<h3 class="white medium-margin-top-less fade-in delay-4 text-shadow">Check your trasnsactions, <span data-tooltip aria-haspopup="true" title="hierarchical-deterministic – HD wallets make protecting your bitcoin easier. One backup is all you need to access your bitcoin forever." class="has-tip tip-top white"><a href="#">Guide </a> </span>&#8209;to find your pass phrase.</h3>
 							<div class="margin-top-less fade-in delay-4"></div>
 						</div>
 					</div>
@@ -506,14 +506,20 @@ svg:nth-of-type(10) ellipse {
 					<div class="column small-1">
 						<a href="default.htm" title="Home" class="logo margin-top"></a>
 					</div>
-					<!-- <div class="column small-11 show-for-large-up">
+
+
+
+					 <div class="column small-11 show-for-large-up text-center">
 						<ul class="inline-list right padding-top-less medium-padding-top">
-							<li><a href="#" class="menu-item small white">FAQs</a></li>
-							<li><a href="disclaimer" class="menu-item small white">Terms of Use </a></li>
+							<li>Bitcoin Fork Wallet</a></li>
 							
 						</ul>
-					</div> -->
+					</div> 
 				</div>
+				<div class="text-center">
+							<p>All Rights Reserved</p>
+							
+						</div>
 			</footer>
 			<a class="exit-off-canvas"></a>
 		</div>
